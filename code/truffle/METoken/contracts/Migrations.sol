@@ -1,4 +1,4 @@
-pragma solidity ^0.4.17;
+pragma solidity ^0.8.11;
 
 contract Migrations {
   address public owner;
@@ -8,7 +8,7 @@ contract Migrations {
     if (msg.sender == owner) _;
   }
 
-  function Migrations() public {
+  constructor() public { //수정함 (함수이름은 컨트랙트명과 동일하면 안됨)
     owner = msg.sender;
   }
 
