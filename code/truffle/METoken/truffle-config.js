@@ -12,12 +12,13 @@ const web3 = new Web3();
 const WalletProvider = require("truffle-wallet-provider");
 const Wallet = require('ethereumjs-wallet');
 
-var mainNetPrivateKey = new ArrayBuffer(process.env["MAINNET_PRIVATE_KEY"], "hex");
-var mainNetWallet = Wallet['default'].fromPrivateKey(mainNetPrivateKey);
+
+var mainnetPrivateKey = new ArrayBuffer(process.env["ROPSTEN_PRIVATE_KEY"], "hex")
+var mainNetWallet = Wallet['default'].fromPrivateKey(mainNetPrivateKeybuffer);
 var mainNetProvider = new WalletProvider(mainNetWallet, "https://mainnet.infura.io/");
 
 var ropstenPrivateKey = new ArrayBuffer(process.env["ROPSTEN_PRIVATE_KEY"], "hex")
-var ropstenWallet = Wallet['default'].fromPrivateKey(ropstenPrivateKey);
+var ropstenWallet = Wallet['default'].fromPrivateKey(ropstenPrivateKeybuffer);
 var ropstenProvider = new WalletProvider(ropstenWallet, "https://ropsten.infura.io/");
 
 module.exports = {
