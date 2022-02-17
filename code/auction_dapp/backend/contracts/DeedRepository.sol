@@ -1,10 +1,10 @@
-pragma solidity ^0.5.16;
+pragma solidity ^0.8.11;
 import "./ERC721/ERC721Token.sol";
 
 /**
  * @title Repository of ERC721 Deeds
  * This contract contains the list of deeds registered by users.
- * This is a demo to show how tokens (deeds) can be minted and added 
+ * This is a demo to show how tokens (deeds) can be minted and added
  * to the repository.
  */
 contract DeedRepository is ERC721Token {
@@ -15,9 +15,9 @@ contract DeedRepository is ERC721Token {
     * @param _name string represents the name of the repository
     * @param _symbol string represents the symbol of the repository
     */
-    constructor(string memory _name, string memory _symbol) 
+    constructor(string memory _name, string memory _symbol)
         public ERC721Token(_name, _symbol) {}
-    
+
     /**
     * @dev Public function to register a new deed
     * @dev Call the ERC721Token minter
