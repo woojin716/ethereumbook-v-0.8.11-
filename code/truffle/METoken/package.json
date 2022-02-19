@@ -11,14 +11,6 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "dotenv": "^16.0.0",
-    "ethereumjs-wallet": "^1.0.2",
-    "truffle-wallet-provider": "^0.0.5"
-  },
-  "jest": {
-    "testEnvironment": "./test/jest-environment-jsdom.js"
-  },
   "dependencies": {
     "openzeppelin-solidity": "^1.12.0"
   }
